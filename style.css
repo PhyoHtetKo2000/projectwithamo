@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+section{
+    width: 80%;
+    margin: auto;
+}
+/* card section */
+nav{
+    height: 80px;
+    /* border: 1px solid black; */
+    background-color: rgb(252, 218, 173);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    margin-bottom: 50px;
+}
+nav h3{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.nav-link {
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    display: inline-block;
+    padding: 30px;
+    
+}
+.nav-link ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    /* border: 1px solid black; */
+    }
+.active{
+    border-bottom: 3px solid rgb(238, 113, 113) ;
+}
+.nav-link ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(238, 113, 113);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-link ul li a:hover::after{
+    width: 100%;
+  }
+.btn{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(238, 113, 113);
+}
+
+/* card section */
+
+.landing{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.card{
+    width: 250px;
+    height: 320px;
+    /* border: 1px solid black; */
+    position: relative;
+}
+.card-body{
+    width: 0;
+    height: 0;
+    border-top: 40px solid rgb(238, 74, 74);
+    border-right: 40px solid rgb(238, 74, 74);
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid transparent;
+    position: absolute;
+    right: 0;
+}
+.card-body p{
+    color: yellow;
+    font-size: 18px;
+    transform: rotate(45deg) translate(-25px, -110%);
+}
+.card img{
+    width: 100%;
+    background-color: rgb(240, 236, 236);
+    margin-bottom: 0;
+}
+.price{
+    font-weight: bold;
+    font-size: 18px;
+    color: darkorange;
+}
+/* blog section */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+.header h3{
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.header a{
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+}
+.review{
+    width: 400px;
+    /* border: 1px solid black; */
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+}
+.review img{
+    width: 100%;
+}
+.btn2{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: burlywood;
+}
+.flex-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.order{
+    position: absolute;
+    right: 5px;
+    bottom: 109px;
+    opacity: 0.9;
+    padding: 10px;
+    background-color: rgb(252, 86, 119);
+    /* border-radius: 5px; */
+}
